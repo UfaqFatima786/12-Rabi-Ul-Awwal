@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at 50% 45%, rgba(30, 91, 76, 0.16), transparent 40%), #061411;
-    color: #f5f0df;
+    background: rgb(0, 46, 0);
 }
 
 .hero-moon {
@@ -63,9 +62,9 @@
 .hero-label {
     display: block;
     font-family: "Poppins", sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     letter-spacing: 5px;
-    color: #9da9a4;
+    color: #ffffff;
     margin-bottom: 22px;
 }
 
@@ -78,7 +77,6 @@
     color: #f5f0df;
     margin: 0;
 }
-
 .hero h1 span {
     display: block;
     color: #d9bd69;
@@ -173,7 +171,485 @@
         transform: translateY(7px);
     }
 }
+.about-section {
+    width: 100%;
+    padding: 130px 8%;
+    background: #015a26;
+    color: #f5f0df;
+    position: relative;
+    overflow: hidden;
+}
 
+.about-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-content {
+    max-width: 600px;
+}
+
+.section-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #ffe185;
+}
+
+
+.about-content h2 {
+   color: white;
+    font-size: 60px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+    transition: all 0.4s ease;
+}
+.about-content h2:hover{
+     cursor: pointer;
+    color: rgb(221, 220, 220);
+    font-size: 56px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+}
+.about-content h2 span {
+    display: block;
+    color: #d9bd69;
+}
+
+.about-line {
+    width: 55px;
+    height: 1px;
+    background: #d9bd69;
+    margin: 30px 0;
+}
+
+.about-content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 2;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid
+        rgba(217, 189, 105, 0.5);
+    color: #d9bd69;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.about-link span {
+    transition: 0.3s ease;
+}
+
+.about-link:hover {
+    color: #f5f0df;
+}
+
+.about-link:hover span {
+    transform: translate(4px, -4px);
+}
+
+.about-visual {
+    min-height: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 3px solid
+        rgba(217, 189, 105, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.visual-circle::before {
+    content: "";
+    position: absolute;
+    inset: 18px;
+    border-radius: 50%;
+    border: 3px solid
+       rgba(217, 189, 105, 0.12);
+}
+.inner-circle {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(28, 92, 76, 0.35),
+            rgba(6, 20, 17, 0.2)
+        );
+    border: 1px solid
+        rgba(217, 189, 105, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+}
+
+.arabic-small {
+    font-family: "Amiri", serif;
+    font-size: 70px;
+    color: #d9bd69;
+    line-height: 1;
+}
+
+.visual-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #82908b;
+}
+
+.visual-year {
+    position: absolute;
+    bottom: 35px;
+    right: 5px;
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: #6f7e78;
+    text-align: center;
+}
+
+.visual-year span {
+    color: #d9bd69;
+    font-size: 25px;
+}
+
+.seerah-section,
+.teachings-section {
+    padding: 120px 7%;
+    background: #022e00;
+    color: #f5f0df;
+}
+
+.teachings-section {
+    background: #071815;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.section-heading > span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #ffffff;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+    font-family: "Cinzel", serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+    transition: all 0.4s ease;
+}
+
+.section-heading h2:hover {
+    cursor: pointer;
+    color: rgb(30, 134, 65);
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+}
+
+.section-heading h2 strong {
+    color: #d9bd69;
+
+    font-weight: 500;
+}
+
+.section-heading p {
+    margin-top: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #8e9d97;
+}
+
+.cards-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.info-card {
+    background: #013a0d;
+    border: 1px solid rgba(105, 217, 114, 0.808);
+    transition: 0.45s ease;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.info-card:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    border-color: rgba(105, 217, 124, 0.678);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.6s ease;
+}
+
+.info-card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+
+/* Content */
+
+.card-content {
+    padding: 25px 23px 28px;
+}
+
+.card-number {
+    font-family: "Cinzel", serif;
+
+    font-size: 12px;
+
+    color: #d9bd69;
+}
+
+.card-content h3 {
+    margin-top: 12px;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    color: #f2ecdc;
+}
+
+.card-content p {
+    margin-top: 12px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: #8f9e98;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #d9bd69;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.card-link:hover {
+    letter-spacing: 2px;
+}
+
+.teaching-card {
+    background: #0b201b;
+    border: 1px solid
+        rgba(217, 189, 105, 0.12);
+    overflow: hidden;
+    transition: 0.45s ease;
+}
+
+.teaching-card:hover {
+    transform: translateY(-8px);
+    border-color:
+        rgba(217, 189, 105, 0.45);
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.teaching-image {
+    height: 210px;
+    overflow: hidden;
+}
+
+.teaching-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.6s ease;
+}
+
+.teaching-card:hover .teaching-image img {
+    transform: scale(1.06);
+}
+
+.teaching-content {
+    padding: 24px;
+}
+
+.teaching-number {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #d9bd69;
+}
+
+.teaching-content h3 {
+    margin-top: 10px;
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #f3eddd;
+}
+.teaching-content p {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #8e9c97;
+}
+
+@media (max-width: 1000px) {
+
+    .cards-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .seerah-section,
+    .teachings-section {
+        padding: 90px 6%;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-image,
+    .teaching-image {
+        height: 240px;
+    }
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+}
+@media (max-width: 900px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+    .about-visual {
+        min-height: 350px;
+    }
+
+    .visual-year {
+        right: 15%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 90px 7%;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content p {
+        font-size: 13px;
+
+        line-height: 1.9;
+    }
+
+    .visual-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .inner-circle {
+        width: 175px;
+        height: 175px;
+    }
+
+    .arabic-small {
+        font-size: 55px;
+    }
+
+    .visual-year {
+        right: 2%;
+        bottom: 10px;
+    }
+}
 @media (max-width: 768px) {
 
     .hero-moon {
