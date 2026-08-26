@@ -46,3 +46,34 @@ resetBtn.addEventListener("click", () => {
     updateCounter();
 });
 updateCounter();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    if (!menuToggle || !navMenu) {
+        console.error("Navbar elements not found!");
+        return;
+    }
+    menuToggle.addEventListener("click", () => {
+
+        menuToggle.classList.toggle("active");
+        navMenu.classList.toggle("active");
+
+    });
+
+    const navLinks = navMenu.querySelectorAll("a");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            menuToggle.classList.remove("active");
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+});
