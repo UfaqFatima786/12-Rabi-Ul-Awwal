@@ -1015,208 +1015,560 @@ nav a:hover {
     font-size: 12px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
 
-    .footer {
-        padding: 60px 7% 20px;
+    .header-container {
+        width: 92%;
     }
 
-    .footer-top {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        padding-bottom: 40px;
+    .logo {
+        font-size: 30px;
     }
 
-    .footer-links {
-        justify-content: flex-start;
+    nav {
+        gap: 22px;
+    }
 
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .about-container {
+        gap: 60px;
+    }
+
+    .cards-container {
         gap: 18px;
     }
 
-    .footer-bottom {
-        flex-direction: column;
+    .card-image,
+    .teaching-image {
+        height: 260px;
+    }
 
-        align-items: flex-start;
+    .durood-container {
+        gap: 60px;
+    }
 
-        gap: 12px;
+    .durood-intro h2 {
+        font-size: 65px;
+    }
+
+    .footer-links {
+        gap: 20px;
     }
 }
+@media (max-width: 992px) {
+    .header-container {
+        width: 92%;
+        height: 70px;
+        padding: 0;
+    }
 
-@media (max-width: 800px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 100svh;
+        padding: 100px 5% 70px;
+    }
+
+    .hero-moon {
+        width: 100px;
+        height: 100px;
+        right: 7%;
+        top: 12%;
+    }
+
+    .moon-cut {
+        width: 94px;
+        height: 94px;
+
+        left: 16px;
+    }
+
+    .hero-content {
+        width: 95%;
+    }
+
+    .arabic-text {
+        font-size: 42px;
+    }
+
+    .hero-label {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+    .about-section {
+        padding: 100px 6%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .about-content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 50px;
+    }
+
+    .about-line {
+        margin: 25px auto;
+    }
+
+    .about-link {
+        margin-top: 10px;
+    }
+
+    .about-visual {
+        min-height: 360px;
+    }
+
+    .visual-year {
+        right: 20%;
+    }
+
+    .seerah-section,
+    .teachings-section {
+        padding: 100px 6%;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .card-image,
+    .teaching-image {
+        height: 280px;
+    }
+
+    .durood-section {
+        padding: 100px 6%;
+    }
 
     .durood-container {
         grid-template-columns: 1fr;
-
         gap: 60px;
     }
 
     .durood-intro {
-        max-width: 600px;
-
-        text-align: center;
-
+        max-width: 650px;
         margin: auto;
+        text-align: center;
     }
 
     .durood-line {
         margin: 25px auto;
     }
-}
 
-@media (max-width: 500px) {
-
-    .durood-section {
-        padding: 90px 6%;
+    .durood-intro h2 {
+        font-size: 60px;
     }
 
     .durood-card {
-        padding: 40px 20px;
+        max-width: 650px;
+        width: 100%;
+        margin: auto;
     }
-}
 
-@media (max-width: 1000px) {
-
-    .cards-container {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .seerah-section,
-    .teachings-section {
+    .reflection-section {
+        min-height: 60vh;
         padding: 90px 6%;
     }
 
-    .cards-container {
-        grid-template-columns: 1fr;
+    .reflection-label {
+        font-size: 15px;
     }
 
-    .card-image,
-    .teaching-image {
-        height: 240px;
+    .reflection-content blockquote {
+        font-size: 2.5rem;
+    }
+
+    .reflection-content p {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 60px 6% 25px;
+    }
+
+    .footer-top {
+        gap: 40px;
+    }
+
+    .footer-brand h2 {
+        font-size: 21px;
+    }
+
+    .footer-links {
+        gap: 18px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+    }
+
+    .header-container {
+        height: 68px;
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        top: 68px;
+        right: -100%;
+        width: min(280px, 80%);
+        height: calc(100vh - 68px);
+        min-height: auto;
+        padding: 40px 28px;
+        background: rgba(2, 15, 11, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 24px;
+        border-left: 1px solid rgba(217, 189, 105, 0.15);
+        transition: right 0.4s ease;
+    }
+
+    nav.active {
+        right: 0;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #ddd;
+        border-bottom: 1px solid
+            rgba(255,255,255,0.06);
+    }
+
+    .hero {
+        min-height: 100svh;
+        padding: 100px 20px 70px;
+    }
+
+    .hero-moon {
+        width: 75px;
+        height: 75px;
+        top: 12%;
+        right: 7%;
+        opacity: 0.7;
+    }
+
+    .moon-cut {
+        width: 70px;
+        height: 70px;
+        left: 13px;
+        top: -6px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .arabic-text {
+        font-size: 35px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 18px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 10vw, 58px);
+        line-height: 1.08;
+        letter-spacing: 1px;
+    }
+
+    .hero-description {
+        max-width: 450px;
+        font-size: 12px;
+        line-height: 1.8;
+        padding: 0 15px;
+    }
+
+    .hero-btn {
+        padding: 12px 20px;
+        font-size: 10px;
+    }
+
+    .hero-scroll {
+        bottom: 20px;
+    }
+    .about-section {
+        padding: 85px 6%;
+    }
+
+    .about-content h2 {
+        font-size: clamp(36px, 9vw, 50px);
+        line-height: 1.2;
+    }
+
+    .section-label {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .about-content p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .about-visual {
+        min-height: 320px;
+    }
+
+    .visual-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .inner-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .arabic-small {
+        font-size: 58px;
+    }
+
+    .visual-text {
+        font-size: 7px;
+    }
+
+    .visual-year {
+        right: 8%;
+        bottom: 15px;
+    }
+    .seerah-section {
+        padding: 85px 6%;
+    }
+
+    .teachings-section {
+        padding: 85px 6%;
     }
 
     .section-heading {
         margin-bottom: 45px;
     }
-}
 
-@media (max-width: 900px) {
-
-    .about-container {
-        grid-template-columns: 1fr;
-
-        gap: 70px;
+    .section-heading h2 {
+        font-size: clamp(36px, 9vw, 52px);
     }
 
-    .about-content {
-        max-width: 700px;
+    .section-heading p {
+        font-size: 12px;
     }
 
-    .about-visual {
-        min-height: 350px;
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
     }
 
-    .visual-year {
-        right: 15%;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .about-section {
-        padding: 90px 7%;
+    .card-image,
+    .teaching-image {
+        height: 230px;
     }
 
-    .about-content h2 {
-        font-size: 2.5rem;
+    .card-content {
+        padding: 20px 18px 23px;
     }
 
-    .about-content p {
-        font-size: 13px;
-
-        line-height: 1.9;
+    .card-content h3 {
+        font-size: 17px;
     }
 
-    .visual-circle {
-        width: 270px;
-        height: 270px;
+    .card-content p {
+        font-size: 11px;
     }
 
-    .inner-circle {
-        width: 175px;
-        height: 175px;
+    .teaching-content {
+        padding: 20px;
     }
 
-    .arabic-small {
-        font-size: 55px;
+    .teaching-content h3 {
+        font-size: 19px;
     }
 
-    .visual-year {
-        right: 2%;
-        bottom: 10px;
+    .teaching-content p {
+        font-size: 11px;
     }
-}
-
-@media (max-width: 768px) {
-
-    .hero-moon {
-        width: 90px;
-        height: 90px;
-        right: 7%;
-        top: 8%;
+    .durood-section {
+        padding: 85px 6%;
     }
 
-    .moon-cut {
-        width: 85px;
-        height: 85px;
-        left: 15px;
-        top: -7px;
+    .durood-intro h2 {
+        font-size: clamp(45px, 11vw, 65px);
     }
 
-    .hero h1 {
-        font-size: 3.3rem;
+    .durood-intro p {
+        font-size: 12px;
     }
 
-    .hero-label {
+    .durood-card {
+        padding: 45px 25px;
+    }
+
+    .arabic-durood {
+        font-size: clamp(1.6rem, 7vw, 2.5rem);
+    }
+
+    .counter {
+        width: 100px;
+        height: 100px;
+    }
+    .reflection-section {
+        min-height: 60vh;
+        padding: 85px 6%;
+    }
+
+    .reflection-label {
+        font-size: 11px;
         letter-spacing: 3px;
     }
 
-    .hero-description {
-        font-size: 13px;
-        padding: 0 20px;
+    .reflection-symbol {
+        margin: 22px 0;
+    }
+
+    .reflection-content blockquote {
+        font-size: clamp(1.6rem, 6vw, 2.5rem);
+        line-height: 1.45;
+    }
+
+    .reflection-content p {
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 60px 6% 25px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        max-width: 500px;
+    }
+
+    .footer-arabic {
+        font-size: 30px;
+    }
+
+    .footer-brand h2 {
+        font-size: 18px;
+    }
+
+    .footer-brand p {
+        font-size: 11px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 15px 22px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
     }
 }
 
+@media (max-width: 576px) {
+    .header-container {
+        width: 88%;
+    }
 
-@media (max-width: 480px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    .menu-toggle {
+        width: 37px;
+        height: 37px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .hero-moon {
-        opacity: 0.45;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+
+        top: 10%;
+        right: 8%;
     }
 
     .moon-cut {
-        width: 66px;
-        height: 66px;
-        left: 12px;
+        width: 56px;
+        height: 56px;
+
+        left: 10px;
         top: -5px;
     }
 
     .arabic-text {
-        font-size: 2.3rem;
-    }
-
-    .hero h1 {
-        font-size: 2.6rem;
-        letter-spacing: 1px;
+        font-size: 30px;
     }
 
     .hero-label {
@@ -1224,7 +1576,256 @@ nav a:hover {
         letter-spacing: 2px;
     }
 
-    .hero-scroll {
-        display: none;
+    .hero h1 {
+        font-size: clamp(36px, 11vw, 48px);
+    }
+
+    .hero-description {
+        font-size: 11px;
+
+        max-width: 350px;
+    }
+
+    .hero-btn {
+        padding: 11px 18px;
+
+        gap: 12px;
+    }
+
+    .about-section {
+        padding: 75px 5%;
+    }
+
+    .about-content h2 {
+        font-size: 35px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+    }
+
+    .about-visual {
+        min-height: 280px;
+    }
+
+    .visual-circle {
+        width: 235px;
+        height: 235px;
+    }
+
+    .visual-circle::before {
+        inset: 14px;
+    }
+
+    .inner-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .arabic-small {
+        font-size: 48px;
+    }
+
+    .visual-text {
+        font-size: 6px;
+        letter-spacing: 2px;
+    }
+
+    .visual-year {
+        font-size: 10px;
+        right: 2%;
+    }
+
+    .visual-year span {
+        font-size: 20px;
+    }
+
+    .seerah-section,
+    .teachings-section {
+        padding: 75px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .section-heading p {
+        font-size: 11px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .card-image,
+    .teaching-image {
+        height: 260px;
+    }
+
+    .card-content {
+        padding: 22px;
+    }
+
+    .card-content h3 {
+        font-size: 19px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+
+    .teaching-content h3 {
+        font-size: 21px;
+    }
+
+    .teaching-content p {
+        font-size: 12px;
+    }
+    .durood-section {
+        padding: 75px 5%;
+    }
+
+    .durood-intro h2 {
+        font-size: 46px;
+    }
+
+    .durood-card {
+        padding: 40px 18px;
+    }
+
+    .card-label {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .arabic-durood {
+        font-size: 25px;
+        white-space: normal;
+        line-height: 1.7;
+    }
+
+    .durood-translation {
+        font-size: 10px;
+    }
+
+    .counter {
+        width: 90px;
+        height: 90px;
+    }
+
+    .counter span {
+        font-size: 27px;
+    }
+
+    .count-btn {
+        padding: 13px 24px;
+    }
+    .reflection-section {
+        min-height: 55vh;
+
+        padding: 70px 5%;
+    }
+
+    .reflection-label {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+    .reflection-content blockquote {
+        font-size: 25px;
+    }
+
+    .reflection-content p {
+        font-size: 11px;
+    }
+
+    .footer {
+        padding: 55px 5% 20px;
+    }
+
+    .footer-arabic {
+        font-size: 27px;
+    }
+
+    .footer-brand h2 {
+        font-size: 15px;
+
+        letter-spacing: 1px;
+    }
+
+    .footer-brand p {
+        font-size: 10px;
+    }
+
+    .footer-links {
+        gap: 12px 18px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+    }
+
+    .footer-bottom p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .arabic-text {
+        font-size: 27px;
+    }
+
+    .hero-label {
+        font-size: 7px;
+    }
+
+    .hero-description {
+        font-size: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 31px;
+    }
+
+    .visual-circle {
+        width: 210px;
+        height: 210px;
+    }
+
+    .inner-circle {
+        width: 135px;
+        height: 135px;
+    }
+
+    .arabic-small {
+        font-size: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .durood-intro h2 {
+        font-size: 40px;
+    }
+
+    .reflection-content blockquote {
+        font-size: 22px;
     }
 }
