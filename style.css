@@ -27,15 +27,6 @@ header {
     justify-content: space-between;
 }
 
-.logo {
-    color: #d9bd69;
-    text-decoration: none;
-    font-family: "Cinzel", serif;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    white-space: nowrap;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -50,24 +41,6 @@ nav a {
     font-size: 11px;
     letter-spacing: 0.5px;
     transition: 0.3s ease;
-}
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    width: 0;
-    height: 1px;
-    background: #d9bd69;
-    transition: 0.3s ease;
-}
-
-nav a:hover {
-    color: #d9bd69;
-}
-
-nav a:hover::after {
-    width: 100%;
 }
 
 .menu-toggle {
