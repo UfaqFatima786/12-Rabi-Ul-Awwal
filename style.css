@@ -1,52 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
-body{
-    background-color: #064b00;
-}
-
 header {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
+    background: rgba(3, 88, 0, 0.349);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid
+        rgba(217, 189, 105, 0.08);
 }
 
 .header-container {
-    width: 90%;
-    max-width: 1200px;
+    width: min(1200px, 90%);
+    height: 75px;
     margin: auto;
-    padding: 22px 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    font-size: 40px;
-    font-weight: bold;
-    background: linear-gradient(90deg, #87ff77, #bef8cd, #39a32f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #d9bd69;
+    white-space: nowrap;
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 28px;
 }
-
 nav a {
     color: #ddd5d5;
     text-decoration: none;
-    font-size: 20px;
-    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
     color: #b9ff98;
 }
-
 .menu-toggle {
     display: none;
     width: 42px;
@@ -1133,46 +1132,97 @@ nav a:hover {
         font-size: 14px;
     }
 }
+
+@media (min-width: 769px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+}
 @media (max-width: 768px) {
-      .header-container {
+   
+    header {
+        position: fixed;
+    }
+
+    .header-container {
         width: 90%;
-        padding: 15px 0;
+        height: 68px;
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 16px;
     }
-
     .menu-toggle {
         display: flex;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        background: transparent;
+        border: 1px solid
+            rgba(217, 189, 105, 0.35);
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        z-index: 1002;
     }
-    nav {
+
+    .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #d9bd69;
+        transition: 0.3s ease;
+    }
+
+    header nav {
         position: fixed;
-        top: 70px;
+        top: 68px;
         right: -100%;
-        width: 280px;
-        height: calc(100vh - 70px);
-        background: rgba(5, 20, 12, 0.98);
-        backdrop-filter: blur(15px);
+        width: min(280px, 80vw);
+        height: calc(100vh - 68px);
+        padding: 35px 25px;
+        background: rgba(4, 14, 12, 0.98);
+        backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 0;
-        padding: 30px;
-        border-left: 1px solid rgba(185, 255, 152, 0.2);
+        gap: 20px;
+        border-left: 1px solid
+            rgba(217, 189, 105, 0.15);
         transition: right 0.4s ease;
-        z-index: 1000;
+        z-index: 1001;
     }
 
-    nav.active {
+    header nav.active {
         right: 0;
     }
 
-    nav a {
+    header nav a {
         width: 100%;
-        padding: 15px 0;
-        font-size: 15px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 10px 0;
+        font-size: 14px;
+        border-bottom: 1px solid
+            rgba(255, 255, 255, 0.06);
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform:
+            translateY(7px)
+            rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform:
+            translateY(-7px)
+            rotate(-45deg);
     }
 
     .menu-toggle.active span:nth-child(1) {
